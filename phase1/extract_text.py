@@ -63,4 +63,11 @@ if __name__ == "__main__":
 
     print(resume_text)
 
+    # Save extracted text to a file
+    output_path = "phase1/resume_text.txt"
+
+    with open(output_path, "w", encoding="utf-8") as file:
+        file.write(resume_text)
+
     print("=" * 70)
+    print(f"Resume text saved to: {output_path}")
